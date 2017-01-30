@@ -70,3 +70,8 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+# repository
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
