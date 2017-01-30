@@ -20,11 +20,6 @@ page '/*.txt', layout: false
 
 # General configuration
 
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
-
 ###
 # Helpers
 ###
@@ -56,9 +51,9 @@ end
 
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
