@@ -2,6 +2,8 @@
 # Page options, layouts, aliases and proxies
 ###
 
+Time.zone = "Tokyo"
+
 # Per-page layout changes:
 #
 # With no layout
