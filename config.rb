@@ -37,9 +37,9 @@ configure :build do
 end
 
 # repository
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
+set :css_dir, 'articles/stylesheets'
+set :js_dir, 'articles/javascripts'
+set :images_dir, 'articles/images'
 
 # layout
 page "/articles/*", layout: :article_layout
