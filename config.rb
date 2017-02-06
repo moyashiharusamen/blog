@@ -13,7 +13,7 @@ page '/*.txt', layout: false
 ###
 
 activate :blog do |blog|
-  blog.permalink = "{url}/index.html"
+  blog.permalink = 'articles/{year}/{month}/{day}-{title}.html'
   blog.sources = "articles/{year}/{month}/{day}-{title}.html"
   blog.taglink = "categories/{tag}.html"
   blog.layout = "article_layout"
