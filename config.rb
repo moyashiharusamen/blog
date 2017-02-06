@@ -41,5 +41,8 @@ set :css_dir, 'articles/stylesheets'
 set :js_dir, 'articles/javascripts'
 set :images_dir, 'articles/images'
 
+# path create
+activate :directory_indexes
+
 # layout
 page "/articles/*", layout: :article_layout
