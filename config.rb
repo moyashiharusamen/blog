@@ -45,4 +45,4 @@ set :images_dir, 'articles/images'
 activate :directory_indexes
 
 # layout
-page "/articles/*", layout: :article_layout
+page "/", layout: :layout
