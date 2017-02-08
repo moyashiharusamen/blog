@@ -44,9 +44,6 @@ set :images_dir, 'articles/images'
 # path create
 activate :directory_indexes
 
-# layout
-page "/", layout: :layout
-
 # markdown_engine
 activate :syntax
 set :markdown_engine, :redcarpet
