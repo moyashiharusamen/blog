@@ -13,9 +13,8 @@ page '/*.txt', layout: false
 ###
 
 activate :blog do |blog|
-  blog.permalink = 'articles/{year}/{month}/{day}-{title}.html'
-  blog.sources = "articles/{year}/{month}/{day}-{title}.html"
-  blog.taglink = "categories/{tag}.html"
+  blog.permalink = 'posts/{year}/{month}/{day}-{title}.html'
+  blog.sources = "posts/{year}/{month}/{day}-{title}.html"
   blog.layout = "article_layout"
   blog.default_extension = ".md"
   blog.paginate = true
@@ -43,6 +42,9 @@ set :images_dir, 'articles/images'
 
 # path create
 activate :directory_indexes
+
+# layout
+page "/", layout: :layout
 
 # markdown_engine
 activate :syntax
