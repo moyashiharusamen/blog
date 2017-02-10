@@ -13,9 +13,8 @@ page '/*.txt', layout: false
 ###
 
 activate :blog do |blog|
-  blog.permalink = "{url}/index.html"
-  blog.sources = "articles/{year}/{month}/{day}-{title}.html"
-  blog.taglink = "categories/{tag}.html"
+  blog.permalink = 'posts/{year}/{month}/{day}-{title}.html'
+  blog.sources = "posts/{year}/{month}/{day}-{title}.html"
   blog.layout = "article_layout"
   blog.default_extension = ".md"
   blog.paginate = true
@@ -37,9 +36,14 @@ configure :build do
 end
 
 # repository
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
+set :css_dir, 'articles/stylesheets'
+set :js_dir, 'articles/javascripts'
+set :images_dir, 'articles/images'
 
-# layout
-page "/articles/*", layout: :article_layout
+# path create
+activate :directory_indexes
+
+# markdown_engine
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
