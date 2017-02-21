@@ -1,0 +1,8 @@
+!!!
+%html{ lang: "ja"}
+	= partial("/layouts/head", locals: { page_is: current_page.data.page })
+	%body
+		= partial "layouts/header"
+		= yield
+		= partial "layouts/footer"
+		= javascript_include_tag "common"
