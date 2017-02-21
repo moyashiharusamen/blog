@@ -343,20 +343,10 @@
   max-width: 640px;
   margin: 0 auto;
 }
-.about-img,
 .about-desc {
   float: left;
 }
-.about-img {
-  width: 15%;
-  @media only screen and (max-width: $spSize) {
-    width: 24%;
-    margin: 0 auto;
-  }
-}
 .about-desc {
-  width: 80%;
-  margin-left: 5%;
   font-size: 1.4rem;
   @media only screen and (max-width: $spSize) {
     width: 70%;
