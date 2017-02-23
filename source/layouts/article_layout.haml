@@ -3,14 +3,14 @@
     %ul.breadCrumb.cf
       %li
         = link_to "TOP", "/"
-      %li #{current_page.data.title}
+      %li= "#{current_page.data.title}"
     .article-body
       = image_tag "#{current_article.date.strftime('%Y')}/#{current_article.date.strftime('%m')}/#{current_article.data.eye}", alt: "main image" , class: "article-main-img"
       %h1.article-title
         = current_article.title
       .article-tags
         - current_article.tags.each do |tag|
-          %div #{tag}
+          %div= "#{tag}"
       .article-date
         = current_article.date.strftime('%Y-%m-%d')
       .markdown-body
