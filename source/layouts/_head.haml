@@ -1,16 +1,22 @@
 %head
+  %script{ async: "async", src:"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}
+  %script (adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-1450797906502024",enable_page_level_ads: true});
   %meta{ charset: "utf-8" }
   %meta{ http: { equiv: 'X-UA-Compatible' }, content: 'IE=edge;chrome=1' }
   %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
   %meta{ name: "description", content: "フロントエンドエンジニアのmoyashiが綴る技術ブログ。業界歴は1年の初学者。現在Ruby on Railsも勉強中。"}
 
-    - if page_is == "top"
-      %title _blank || top
+  - if page_is == "top"
+    %title _blank || top
 
-    - elsif page_is == "article"
-      %title= "_blank || #{current_page.data.title}"
-      = stylesheet_link_tag "article"
-      = stylesheet_link_tag "markdown-highlights"
+  - elsif page_is == "article"
+    %title= "_blank || #{current_page.data.title}"
+    = stylesheet_link_tag "article"
+    = stylesheet_link_tag "markdown-highlights"
+
+  - elsif page_is == "books"
+    %title= "_blank || books"
+    = stylesheet_link_tag "books"
 
   %link{ rel: "shortcut icon", href: "http://moyashi-harusamen.com/articles/images/favicon.ico" }
   = stylesheet_link_tag "reset"

@@ -1,0 +1,67 @@
+@import "_variable";
+
+.books-title {
+  font-size: 3.2rem;
+  @media only screen and (max-width: $spSize) {
+    font-size: 2.4rem;
+  }
+}
+.page-desc {
+  margin-top: 8px;
+  font-size: 1.6rem;
+}
+.caution {
+  display: block;
+  margin-top: 4px;
+  font-size: 1rem;
+}
+
+.books-artiecle {
+  margin-top: 64px;
+}
+.books-list {
+  > li {
+    > a {
+      display:  block;
+      width: 20%;
+      margin: 0 auto;
+      float: left;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      @media only screen and (max-width: $spSize) {
+        width: 50%;
+        float: none;
+      }
+      &:hover {
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  > li + li {
+    margin-top: 64px;
+    @media only screen and (max-width: $spSize) {
+      margin-top: 40px;
+      padding-top: 48px;
+      border-top: 1px solid #999;
+    }
+  }
+}
+.desc-wrap {
+  width: 75%;
+  margin-left: 5%;
+  float: left;
+  @media only screen and (max-width: $spSize) {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: initial;
+    float: none;
+  }
+}
+.book-name {
+  padding: 8px 0 8px 16px;
+  font-size: 2.4rem;
+  border-left: 4px solid #005183;
+}
+.book-desc {
+  margin-top: 24px;
+  font-size: 1.6rem;
+}
