@@ -2,10 +2,9 @@
 title: ejsでホワイトスペースを削除する方法
 date: 2017-03-23
 eye: 23_title.png
-tags:  javascript,vue.js
+tags:  ejs, html
 page: article
 ---
-
 
 使い慣れた静的サイトジェネレータ「ejs」  
 半年ほど使っていますが、今更ながらホワイトスペースを削除する方法を知ったのでご紹介します。
