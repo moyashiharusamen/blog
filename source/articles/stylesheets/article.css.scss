@@ -80,6 +80,10 @@
       content: "・";
     }
   }
+  > h4 {
+    margin-top: 16px;
+    font-size: 1.6em;
+  }
   > p {
     margin-top: 16px;
     font-size: 1.6rem;
@@ -128,5 +132,8 @@
   }
   hr {
     margin: 24px 0;
+  }
+  em {
+    font-style: normal;
   }
 }
